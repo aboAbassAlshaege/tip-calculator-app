@@ -159,6 +159,8 @@ span {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  -webkit-overflow: auto;
+  -moz-overflow: auto;
   overflow: auto;
 }
 #app .output > div > div span:first-child {

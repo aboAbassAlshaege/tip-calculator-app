@@ -155,6 +155,8 @@ span {
       align-items: center;
       justify-content: space-between;
       padding: 20px 0;
+      -webkit-overflow: auto;
+      -moz-overflow: auto;
       overflow: auto;
       span:first-child {
         position: relative;
