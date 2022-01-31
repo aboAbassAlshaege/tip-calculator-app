@@ -61,6 +61,7 @@ span {
       left: 20px;
     }
     input {
+      overflow: auto;
       border-radius: 3px;
       outline: none;
       border: none;
@@ -143,6 +144,7 @@ span {
     }
   }
   .output {
+    max-width: 385px;
     background-color: hsl(183, 100%, 15%);
     padding: 30px;
     display: flex;

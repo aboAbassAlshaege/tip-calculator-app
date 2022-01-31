@@ -67,6 +67,7 @@ span {
   left: 20px;
 }
 #app .controls input {
+  overflow: auto;
   border-radius: 3px;
   outline: none;
   border: none;
@@ -146,6 +147,7 @@ span {
   box-shadow: 0px 0px 7px red;
 }
 #app .output {
+  max-width: 385px;
   background-color: #00494d;
   padding: 30px;
   display: flex;
