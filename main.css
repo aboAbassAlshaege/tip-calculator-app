@@ -163,6 +163,16 @@ span {
   -moz-overflow: auto;
   overflow: auto;
 }
+#app .output > div > div::-webkit-scrollbar {
+  width: 1px;
+}
+#app .output > div > div::-webkit-scrollbar-track {
+  background-color: #00494d;
+}
+#app .output > div > div::-webkit-scrollbar-thumb {
+  background-color: #26c0ab;
+  border-radius: 10px;
+}
 #app .output > div > div span:first-child {
   position: relative;
   color: white;
