@@ -51,6 +51,11 @@ span {
     flex-direction: column;
   }
 }
+@media (max-width: 290px) {
+  #app {
+    top: 70%;
+  }
+}
 #app .controls,
 #app .output {
   border-radius: 15px;
@@ -176,7 +181,7 @@ span {
 #app .output > div > div span:first-child {
   position: relative;
   color: white;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 #app .output > div > div span:first-child::before {
   content: "person";
@@ -190,6 +195,11 @@ span {
   color: #26c0ab;
   font-size: 40px;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  #app .output > div > div span:last-child {
+    font-size: 30px;
+  }
 }
 #app .output input {
   width: 100%;
