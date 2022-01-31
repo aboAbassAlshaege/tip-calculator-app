@@ -1,0 +1,197 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: "ubuntu";
+}
+
+span {
+  display: block;
+  margin-bottom: 10px;
+  color: #00494d;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.logo {
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+  margin: 100px auto;
+}
+@media (max-width: 767px) {
+  .logo {
+    margin: 20px auto;
+  }
+}
+
+#app {
+  width: 800px;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 25px;
+  margin: 40px 0;
+  border-radius: 20px;
+  background-color: white;
+}
+@media (max-width: 767px) {
+  #app {
+    flex-direction: column;
+  }
+}
+#app .controls,
+#app .output {
+  border-radius: 15px;
+  padding: 10px;
+  flex: 1;
+}
+#app .controls .bill {
+  position: relative;
+  padding: 10px 0;
+}
+#app .controls img {
+  position: absolute;
+  top: 55%;
+  left: 20px;
+}
+#app .controls input {
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  background-color: #f3f8fb;
+  padding: 10px;
+  width: 100%;
+  font-weight: 700;
+  color: #00494d;
+  font-size: 23px;
+  text-align: end;
+  color: #00494d;
+}
+#app .controls input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#app .controls input:focus {
+  box-shadow: 0 0px 7px #26c0ab;
+}
+#app .controls .tip {
+  margin: 30px 0;
+}
+#app .controls .tip .tip__options {
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+#app .controls .tip .tip__options .option {
+  flex-basis: 30%;
+  background-color: #00494d;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#app .controls .tip .tip__options .option.option--active {
+  background-color: #26c0ab;
+  color: black;
+}
+#app .controls .tip .tip__options .option:hover {
+  background-color: #9ee8df;
+}
+#app .controls .tip .tip__options .option.custom {
+  position: relative;
+  padding: 0;
+  font-weight: 400;
+  color: #00494d;
+  background-color: #f4fafa;
+}
+#app .controls .tip .tip__options .option.custom::before {
+  content: "Custom";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f4fafa;
+}
+#app .controls .tip .tip__options .option.custom.active::before {
+  display: none;
+}
+#app .controls .tip .tip__options .option.custom input {
+  text-align: start;
+}
+#app .controls .people {
+  position: relative;
+}
+#app .controls .people input.error {
+  box-shadow: 0px 0px 7px red;
+}
+#app .output {
+  background-color: #00494d;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#app .output > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  overflow: auto;
+}
+#app .output > div > div span:first-child {
+  position: relative;
+  color: white;
+  margin-right: 50px;
+}
+#app .output > div > div span:first-child::before {
+  content: "person";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  color: #c5e4e7;
+  font-size: 13px;
+}
+#app .output > div > div span:last-child {
+  color: #26c0ab;
+  font-size: 40px;
+  font-weight: 700;
+}
+#app .output input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  background-color: #26c2ac;
+  color: black;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#app .output input:hover {
+  background-color: #9ee8df;
+}
+
+/*# sourceMappingURL=main.css.map */

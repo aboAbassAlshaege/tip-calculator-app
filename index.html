@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Tip calculator app | Frontend Mentor</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="" />
+    </div>
+    <div id="app">
+      <div class="controls">
+        <div class="bill">
+          <span>Bill</span>
+          <img src="./images/icon-dollar.svg" alt="" />
+          <input type="number" value="0" />
+        </div>
+        <div class="tip">
+          <span>Select Tip %</span>
+          <div class="tip__options">
+            <div class="option option--active" data-tip="5">5%</div>
+            <div class="option" data-tip="10">10%</div>
+            <div class="option" data-tip="15">15%</div>
+            <div class="option" data-tip="25">25%</div>
+            <div class="option" data-tip="50">50%</div>
+            <div class="option custom" data-tip="custom">
+              <input type="number" value="0" max="100" min="0">
+            </div>
+          </div>
+        </div>
+        <div class="people">
+          <span>Number of People</span>
+          <img src="./images/icon-person.svg" alt="" />
+          <input type="number" value="1"/>
+        </div>
+      </div>
+      <div class="output">
+        <div>
+          <div class="tip-amount">
+            <span>Tip Amount</span>
+            <span>$.27</span>
+          </div>
+          <div class="total">
+            <span>Total</span>
+            <span>$32.79</span>
+          </div>
+        </div>
+        <input type="button" id="reset" value="RESET" />
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
